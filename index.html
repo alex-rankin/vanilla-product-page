@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Product Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+  <nav class="navbar">
+    <span class="cart-button">My Cart ( <span id="productQuantity">0</span> )</span>
+  </nav>
+
+  <div class="checkout-wrapper">
+    <div class="product-img-wrapper">
+      <img id="productImage">
+    </div>
+
+    <div class="product-wrapper">
+      <h1 id="productTitle">Product Title</h1>
+      <p id="productPrice">Price Title</p>
+      <p id="productDesc">Paragraph text goes here</p>
+
+      <p class="sizeTitle">Size<span>*</span></p>
+
+      <div class="sizes-wrapper">
+        <ul id="productSizes"></ul>
+      </div>
+
+      <div>
+        <button class="add-cart-btn">Add To Cart</button>
+      </div>
+      <p id="productSuccess">Product has been added to your cart!</p>
+      <p id="productError">Please select a size before adding to cart.</p>
+    </div>
+  </div>
+
+  <div id="cartItemsContainer" class="cart-items-container" >
+    <ul id="cartItemsList"></ul>
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
